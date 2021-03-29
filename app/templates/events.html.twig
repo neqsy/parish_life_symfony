@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/events.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/029cd684fc.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ asset('jss/search.js') }}" defer></script>
+    <title>EVENTS</title>
+</head>
+<body>
+<div class="base-container">
+    <nav>
+        <ul>
+            <li>
+                <i class="fas fa-calendar-week"></i>
+                <a href="{{ path('app_events') }}" class="button">events</a>
+            </li>
+            <li>
+                <i class="fas fa-users"></i>
+                <a href="#" class="button">people</a>
+            </li>
+            <li>
+                <i class="fas fa-comment-alt"></i>
+                <a href="#" class="button">messages</a>
+            </li>
+            <li>
+                <i class="fas fa-bell"></i>
+                <a href="#" class="button">notifications</a>
+            </li>
+            <li>
+                <i class="fas fa-cog"></i>
+                <a href="#" class="button">settings</a>
+            </li>
+        </ul>
+        <img src="{{ asset('img/logo.svg') }}">
+        <form class="logout" action="logout" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+
+    </nav>
+    <main>
+        <header class="search">
+            <div class="search-bar">
+                <input placeholder="search event">
+            </div>
+            <div class="add-event">
+                <i class="fas fa-plus"></i>
+                <a href="addEvent">ADD</a>
+            </div>
+            <div class="order-mass">
+                <i class="fab fa-cc-mastercard"></i>
+                <a href="#">ORDER MASS</a>
+            </div>
+        </header>
+
+        <section class="events">
+
+            <div id = "event-1">
+
+            </div>
+
+
+        </section>
+    </main>
+</div>
+</body>
