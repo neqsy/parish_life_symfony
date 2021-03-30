@@ -12,4 +12,4 @@ app_register:
 
 app_events:
   path: /events
-  controller: App\Controller\EventsgitController::events
+  controller: App\Controller\EventsController::events
