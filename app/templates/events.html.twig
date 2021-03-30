@@ -33,7 +33,7 @@
             </li>
         </ul>
         <img src="{{ asset('img/logo.svg') }}">
-        <form class="logout" action="logout" method="POST">
+        <form class="logout" action="{{ path('app_login') }}" method="POST">
             <button type="submit">Logout</button>
         </form>
 
@@ -45,11 +45,11 @@
             </div>
             <div class="add-event">
                 <i class="fas fa-plus"></i>
-                <a href="addEvent">ADD</a>
+                <a href="{{ path('app_add-event') }}">ADD</a>
             </div>
             <div class="order-mass">
                 <i class="fab fa-cc-mastercard"></i>
-                <a href="#">ORDER MASS</a>
+                <a href="{{ path('app_order') }}">ORDER MASS</a>
             </div>
         </header>
 

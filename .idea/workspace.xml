@@ -20,25 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66cdbd7e-4279-4576-ad77-e46fa8b6cd2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/EventsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Controller/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/events.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/masspay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/masspay.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/OrderController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/add-event.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/order.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/EventsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/EventsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/events.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/events.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000005" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000005" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
@@ -127,8 +133,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/Controller" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -154,7 +162,8 @@
       <workItem from="1616442670831" duration="3902000" />
       <workItem from="1616446681675" duration="666000" />
       <workItem from="1616487155782" duration="1434000" />
-      <workItem from="1617039820634" duration="5048000" />
+      <workItem from="1617039820634" duration="5828000" />
+      <workItem from="1617088685477" duration="2504000" />
     </task>
     <servers />
   </component>
@@ -171,6 +180,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="578" y="291" key="#Composer" timestamp="1616446712723">
@@ -189,9 +199,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617040496775" />
-    <state x="766" y="242" key="NewPhpClassDialog" timestamp="1617044123297">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="613" y="192" key="NewPhpClassDialog" timestamp="1617089833230">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="613" y="192" key="NewPhpClassDialog/-1440.0.1440.850/0.0.1536.824@0.0.1536.824" timestamp="1617089833230" />
     <state x="766" y="242" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617044123297" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1616446811520">
       <screen x="0" y="0" width="1536" height="824" />
