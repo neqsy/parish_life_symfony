@@ -2,40 +2,45 @@
 
 namespace App\Entity;
 
-use App\Repository\UsersDetailsRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=UsersDetailsRepository::class)
+ * UsersDetails
+ *
+ * @ORM\Table(name="users_details")
+ * @ORM\Entity
  */
 class UsersDetails
 {
     /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=100, nullable=false)
      */
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @var string
+     *
+     * @ORM\Column(name="surname", type="string", length=100, nullable=false)
      */
     private $surname;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
+     * @var int|null
+     *
+     * @ORM\Column(name="phone", type="integer", nullable=true)
      */
     private $phone;
-
-    /**
-     * @ORM\OneToOne(targetEntity=Users::class, mappedBy="id_user_details", cascade={"persist", "remove"})
-     */
-    private $users;
 
     public function getId(): ?int
     {
@@ -78,20 +83,5 @@ class UsersDetails
         return $this;
     }
 
-    public function getUsers(): ?Users
-    {
-        return $this->users;
-    }
 
-    public function setUsers(Users $users): self
-    {
-        // set the owning side of the relation if necessary
-        if ($users->getIdUserDetails() !== $this) {
-            $users->setIdUserDetails($this);
-        }
-
-        $this->users = $users;
-
-        return $this;
-    }
 }

@@ -2,53 +2,58 @@
 
 namespace App\Entity;
 
-use App\Repository\EventsRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
+use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=EventsRepository::class)
+ * Events
+ *
+ * @ORM\Table(name="events")
+ * @ORM\Entity
+ * *
+ * @ApiResource(
+ *     collectionOperations={"get"},
+ *     itemOperations={"get"}
+ *
+ * )
+
  */
 class Events
 {
     /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
+
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=255, nullable=false)
      */
+
     private $title;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=255, nullable=false)
      */
+
     private $description;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime", nullable=false)
      */
-    private $created_at;
 
-
-    /**
-     * @ORM\OneToOne(targetEntity=Users::class, mappedBy="id_user_details", cascade={"persist", "remove"})
-     */
-    private $users;
-
-    /**
-     * @ORM\OneToMany(targetEntity=UserEvents::class, mappedBy="id_project")
-     */
-    private $userEvents;
-
-    public function __construct()
-    {
-        $this->userEvents = new ArrayCollection();
-    }
+    private $createdAt;
 
     public function getId(): ?int
     {
@@ -81,52 +86,15 @@ class Events
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeInterface $created_at): self
+    public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
-        $this->created_at = $created_at;
+        $this->createdAt = $createdAt;
 
         return $this;
     }
 
 
-    public function setIdAssignedBy(?int $id_assigned_by): self
-    {
-        $this->id_assigned_by = $id_assigned_by;
-
-        return $this;
-    }
-
-
-    /**
-     * @return Collection|UserEvents[]
-     */
-    public function getUserEvents(): Collection
-    {
-        return $this->userEvents;
-    }
-
-    public function addUserEvent(UserEvents $userEvent): self
-    {
-        if (!$this->userEvents->contains($userEvent)) {
-            $this->userEvents[] = $userEvent;
-            $userEvent->setIdProject($this);
-        }
-
-        return $this;
-    }
-
-    public function removeUserEvent(UserEvents $userEvent): self
-    {
-        if ($this->userEvents->removeElement($userEvent)) {
-            // set the owning side to null (unless already changed)
-            if ($userEvent->getIdProject() === $this) {
-                $userEvent->setIdProject(null);
-            }
-        }
-
-        return $this;
-    }
 }

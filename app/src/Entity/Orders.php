@@ -2,59 +2,74 @@
 
 namespace App\Entity;
 
-use App\Repository\OrdersRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=OrdersRepository::class)
+ * Orders
+ *
+ * @ORM\Table(name="orders", indexes={@ORM\Index(name="IDX_E52FFDEE79F37AE5", columns={"id_user_id"})})
+ * @ORM\Entity
  */
 class Orders
 {
     /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
 
-
     /**
-     * @ORM\Column(type="string", length=100)
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=100, nullable=false)
      */
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @var string
+     *
+     * @ORM\Column(name="surname", type="string", length=100, nullable=false)
      */
     private $surname;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string
+     *
+     * @ORM\Column(name="intention", type="string", length=255, nullable=false)
      */
     private $intention;
 
     /**
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="phone", type="integer", nullable=false)
      */
     private $phone;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="datetime", nullable=false)
      */
     private $date;
 
     /**
-     * @ORM\ManyToOne(targetEntity=users::class)
-     * @ORM\JoinColumn(nullable=false)
+     * @var \Users
+     *
+     * @ORM\ManyToOne(targetEntity="Users")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_user_id", referencedColumnName="id")
+     * })
      */
-    private $id_user;
+    private $idUser;
 
     public function getId(): ?int
     {
         return $this->id;
     }
-
-
 
     public function getName(): ?string
     {
@@ -116,15 +131,17 @@ class Orders
         return $this;
     }
 
-    public function getIdUser(): ?users
+    public function getIdUser(): ?Users
     {
-        return $this->id_user;
+        return $this->idUser;
     }
 
-    public function setIdUser(?users $id_user): self
+    public function setIdUser(?Users $idUser): self
     {
-        $this->id_user = $id_user;
+        $this->idUser = $idUser;
 
         return $this;
     }
+
+
 }

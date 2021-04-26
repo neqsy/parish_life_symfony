@@ -2,42 +2,56 @@
 
 namespace App\Entity;
 
-use App\Repository\UsersRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=UsersRepository::class)
+ * Users
+ *
+ * @ORM\Table(name="users", uniqueConstraints={@ORM\UniqueConstraint(name="UNIQ_1483A5E9F5230246", columns={"id_user_details_id"})})
+ * @ORM\Entity
  */
+
 class Users
 {
     /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue
-     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
-    /**
-     * @ORM\Column(type="integer")
-     */
 
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(name="email", type="string", length=100, nullable=true)
+     */
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=100, nullable=false)
      */
     private $password;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime", nullable=false)
      */
-    private $created_at;
+    private $createdAt;
 
     /**
-     * @ORM\OneToOne(targetEntity=UsersDetails::class, inversedBy="users", cascade={"persist", "remove"})
-     * @ORM\JoinColumn(nullable=false)
+     * @var \UsersDetails
+     *
+     * @ORM\ManyToOne(targetEntity="UsersDetails")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_user_details_id", referencedColumnName="id")
+     * })
      */
-    private $id_user_details;
-
+    private $idUserDetails;
 
     public function getId(): ?int
     {
@@ -49,7 +63,7 @@ class Users
         return $this->email;
     }
 
-    public function setEmail(string $email): self
+    public function setEmail(?string $email): self
     {
         $this->email = $email;
 
@@ -70,25 +84,27 @@ class Users
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
-    public function setCreatedAt(\DateTimeInterface $created_at): self
+    public function setCreatedAt(\DateTimeInterface $createdAt): self
     {
-        $this->created_at = $created_at;
+        $this->createdAt = $createdAt;
 
         return $this;
     }
 
-    public function getIdUserDetails(): ?events
+    public function getIdUserDetails(): ?UsersDetails
     {
-        return $this->id_user_details;
+        return $this->idUserDetails;
     }
 
-    public function setIdUserDetails(?events $id_user_details): self
+    public function setIdUserDetails(?UsersDetails $idUserDetails): self
     {
-        $this->id_user_details = $id_user_details;
+        $this->idUserDetails = $idUserDetails;
 
         return $this;
     }
+
+
 }

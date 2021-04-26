@@ -2,34 +2,48 @@
 
 namespace App\Entity;
 
-use App\Repository\UserEventsRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=UserEventsRepository::class)
+ * UserEvents
+ *
+ * @ORM\Table(name="user_events", indexes={@ORM\Index(name="IDX_36D54C77B3E79F4B", columns={"id_project_id"})})
+ * @ORM\Entity
  */
 class UserEvents
 {
     /**
+     * @var int
+     *
+     * @ORM\Column(name="id_user", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $id_user;
+    private $idUser;
 
     /**
-     * @ORM\ManyToOne(targetEntity=events::class, inversedBy="userEvents")
-     * @ORM\JoinColumn(nullable=false)
+     * @var \Events
+     *
+     * @ORM\ManyToOne(targetEntity="Events")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_project_id", referencedColumnName="id")
+     * })
      */
-    private $id_project;
+    private $idProject;
 
-    public function getIdProject(): ?events
+    public function getIdUser(): ?int
     {
-        return $this->id_project;
+        return $this->idUser;
     }
 
-    public function setIdProject(?events $id_project): self
+    public function getIdProject(): ?Events
     {
-        $this->id_project = $id_project;
+        return $this->idProject;
+    }
+
+    public function setIdProject(?Events $idProject): self
+    {
+        $this->idProject = $idProject;
 
         return $this;
     }

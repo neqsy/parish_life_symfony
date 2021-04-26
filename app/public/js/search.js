@@ -29,14 +29,28 @@ function loadEvents(events) {
     })
 }
 
+function loadAllEvents() {
+    fetch("/api/events", {
+        method: "GET",
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(function(response){
+        return response.json();
+    }).then(function(events){
+        eventContainer.innerHTML = "";
+        loadEvents(events)
+    });
+}
+
 function createEvent(event)
 {
     const template = document.querySelector("#event-template");
     const clone = template.content.cloneNode(true);
-    const image = clone.querySelector("img");
-    image.src = `/public/uploads/${event.image}`;
+    const created = clone.querySelector("h3");
     const title = clone.querySelector("h2");
     title.innerHTML = event.title;
+    created.innerHTML = event.createdAt;
     const description = clone.querySelector("p");
     description.innerHTML = event.description;
 

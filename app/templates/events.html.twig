@@ -4,10 +4,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/events.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/029cd684fc.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{{ asset('jss/search.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('js/search.js') }}" defer></script>
     <title>EVENTS</title>
 </head>
-<body>
+<body onload="loadAllEvents();">
 <div class="base-container">
     <nav>
         <ul>
@@ -63,4 +63,15 @@
         </section>
     </main>
 </div>
+
+<template id="event-template">
+    <div id="event">
+        <div>
+            <h2>title</h2>
+            <h3>createdAt</h3>
+            <p>description</p>
+        </div>
+    </div>
+</template>
+
 </body>

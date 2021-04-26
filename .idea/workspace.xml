@@ -20,36 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66cdbd7e-4279-4576-ad77-e46fa8b6cd2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/config/packages/easy_admin.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/test/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/translation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/packages/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config/routes/easy_admin.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210412143609.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Entity/Events.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Entity/Orders.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Entity/Users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Entity/UsersDetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Repository/EventsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Repository/OrdersRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Repository/UsersDetailsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/Repository/UsersRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/translations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000007" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000008" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000009" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000010" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000011" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000013" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000014" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000015" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/masspay/doctrine_migration_versions.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/masspay/events.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/masspay/orders.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/masspay/user_events.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/masspay/users.ibd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/masspay/users_details.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Entity/DoctrineMigrationVersions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000016" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000017" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000018" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000019" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000020" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000021" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/masspay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/masspay.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -57,7 +34,14 @@
       <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Events.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Events.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/UserEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/UserEvents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Entity/UsersDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/UsersDetails.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/events.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/events.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
@@ -69,12 +53,19 @@
       <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000006" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000006" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000015" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000015" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/masspay/events.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/events.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/masspay/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/users.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/masspay/users_details.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/users_details.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
@@ -172,6 +163,17 @@
       <path value="$PROJECT_DIR$/app/vendor/symfony/security-http" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/options-resolver" />
       <path value="$PROJECT_DIR$/app/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/app/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/app/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/app/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/app/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/app/vendor/willdurand/negotiation" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/app/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/app/vendor/api-platform/core" />
     </include_path>
   </component>
   <component name="ProjectId" id="1q7trRRAl7sp1kRNfUbvI68LcAu" />
@@ -185,7 +187,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -217,7 +219,11 @@
       <workItem from="1617088685477" duration="3603000" />
       <workItem from="1618220204228" duration="1693000" />
       <workItem from="1618222349436" duration="298000" />
-      <workItem from="1618234717120" duration="5180000" />
+      <workItem from="1618234717120" duration="5464000" />
+      <workItem from="1618299143118" duration="1227000" />
+      <workItem from="1618902954133" duration="617000" />
+      <workItem from="1619264734934" duration="6789000" />
+      <workItem from="1619448486047" duration="10485000" />
     </task>
     <servers />
   </component>
@@ -244,10 +250,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="291" key="#Composer/-1440.0.1440.850/0.0.1536.824@0.0.1536.824" timestamp="1616446712723" />
-    <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616446503633">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="927" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619272501233">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.0.1440.850/0.0.1536.824@0.0.1536.824" timestamp="1616446503633" />
+    <state x="927" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1619272501233" />
     <state x="701" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617044079750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
