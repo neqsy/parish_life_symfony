@@ -20,52 +20,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66cdbd7e-4279-4576-ad77-e46fa8b6cd2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/Entity/DoctrineMigrationVersions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000016" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000017" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000018" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000019" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000020" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/binlog.000021" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/masspay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/masspay.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210529132810.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/migrations/Version20210529133415.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/Security/AppAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000024" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000025" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000026" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000027" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000028" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/binlog.000029" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql/masspay/user.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/app/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/Events.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Events.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/Orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/UserEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/UserEvents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/Entity/UsersDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Entity/UsersDetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/app/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/css/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/css/events.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/add-event.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/add-event.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/events.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/events.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/order.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/order.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_1.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_10.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_2.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_3.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_4.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_5.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_6.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_7.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_8.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#innodb_temp/temp_9.ibt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/binlog.000015" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.000015" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/#ib_16384_1.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/#ib_16384_1.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000005" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000006" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000007" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000008" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000009" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000010" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000011" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000012" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000013" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000014" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000015" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000016" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000017" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000018" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000019" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000020" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/binlog.000021" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/binlog.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_buffer_pool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ib_logfile0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/ibtmp1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/ibtmp1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/masspay/events.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/events.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/masspay/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/doctrine_migration_versions.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/masspay/orders.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/orders.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/masspay/user_events.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/user_events.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/masspay/users.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/users.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/masspay/users_details.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/masspay/users_details.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/mysql.ibd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/undo_002" afterDir="false" />
@@ -223,7 +237,14 @@
       <workItem from="1618299143118" duration="1227000" />
       <workItem from="1618902954133" duration="617000" />
       <workItem from="1619264734934" duration="6789000" />
-      <workItem from="1619448486047" duration="10485000" />
+      <workItem from="1619448486047" duration="11716000" />
+      <workItem from="1619508648070" duration="1288000" />
+      <workItem from="1620113077101" duration="1705000" />
+      <workItem from="1620718616550" duration="2703000" />
+      <workItem from="1621323156112" duration="1310000" />
+      <workItem from="1621928513419" duration="2415000" />
+      <workItem from="1622294194066" duration="5398000" />
+      <workItem from="1622491963958" duration="1115000" />
     </task>
     <servers />
   </component>
